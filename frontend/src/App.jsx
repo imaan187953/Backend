@@ -6,7 +6,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-  axios.get('/jokes')
+  axios.get('/api/jokes')
     .then((response) => {
       setJokes(response.data)
     })
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
